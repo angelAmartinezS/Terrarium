@@ -20,20 +20,20 @@ h1 {
 }
 
 #left-container {
-  left: 0px;
+  left: 3px;
 }
 
 #right-container {
-  right: 0px;
+  right: 2px;
 }
 
-.plant-holder {
+.planta-holder {
 	position: relative;
 	height: 13%;
 	left: -10px;
 }
 
-.plant {
+.planta {
 	position: absolute;
 	max-width: 150%;
 	max-height: 150%;
