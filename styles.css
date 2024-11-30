@@ -27,13 +27,13 @@ h1 {
   right: 2px;
 }
 
-.planta-holder {
+.plant-holder {
 	position: relative;
 	height: 13%;
 	left: -10px;
 }
 
-.planta {
+.plant {
 	position: absolute;
 	max-width: 150%;
 	max-height: 150%;
