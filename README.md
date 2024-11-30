@@ -20,3 +20,11 @@ The provided example includes:
 I am a student of the ICT career and I am in the fifth semester.
 
 mail: l221130268@gamadero.tecnm.mx
+
+# Repository URL
+
+https://github.com/angelAmartinezS/Terrarium.git
+
+#  Website URL
+
+https://angelamartinezs.github.io/Terrarium/
