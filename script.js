@@ -1,6 +1,6 @@
 console.log("Working!!!");
 
-// Agregar dragElement a cada planta
+// Hacer todas las plantas arrastrables
 for (let i = 1; i <= 14; i++) {
   dragElement(document.getElementById(`plant${i}`));
 }
