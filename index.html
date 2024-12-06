@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terrario Interactivo</title>
+  <title>Terrario</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Terrarium</h1>
-
-  <!-- Contenedor izquierdo -->
   <div id="left-container">
-    <div class="plant-holder"><img src="./images/plant1.png" alt="plant" class="plant" draggable="true" id="plant1"></div>
-    <div class="plant-holder"><img src="./images/plant2.png" alt="plant" class="plant" draggable="true" id="plant2"></div>
-    <div class="plant-holder"><img src="./images/plant3.png" alt="plant" class="plant" draggable="true" id="plant3"></div>
-    <div class="plant-holder"><img src="./images/plant4.png" alt="plant" class="plant" draggable="true" id="plant4"></div>
-    <div class="plant-holder"><img src="./images/plant5.png" alt="plant" class="plant" draggable="true" id="plant5"></div>
-    <div class="plant-holder"><img src="./images/plant6.png" alt="plant" class="plant" draggable="true" id="plant6"></div>
-    <div class="plant-holder"><img src="./images/plant7.png" alt="plant" class="plant" draggable="true" id="plant7"></div>
+    <!-- Imágenes del lado izquierdo -->
+    <img src="plant1.png" class="plant" draggable="true">
+    <img src="plant2.png" class="plant" draggable="true">
+    <img src="plant3.png" class="plant" draggable="true">
+    <img src="plant4.png" class="plant" draggable="true">
+    <img src="plant5.png" class="plant" draggable="true">
+    <img src="plant6.png" class="plant" draggable="true">
+    <img src="plant7.png" class="plant" draggable="true">
   </div>
-
-  <!-- Contenedor central (Terrario) -->
-  <div id="terrarium">
+  
+  <div id="terrarium-container">
     <div class="jar-walls"></div>
     <div class="jar-top"></div>
+    <div class="jar-bottom"></div>
     <div class="dirt"></div>
   </div>
 
-  <!-- Contenedor derecho -->
   <div id="right-container">
-    <div class="plant-holder"><img src="./images/plant8.png" alt="plant" class="plant" draggable="true" id="plant8"></div>
-    <div class="plant-holder"><img src="./images/plant9.png" alt="plant" class="plant" draggable="true" id="plant9"></div>
-    <div class="plant-holder"><img src="./images/plant10.png" alt="plant" class="plant" draggable="true" id="plant10"></div>
-    <div class="plant-holder"><img src="./images/plant11.png" alt="plant" class="plant" draggable="true" id="plant11"></div>
-    <div class="plant-holder"><img src="./images/plant12.png" alt="plant" class="plant" draggable="true" id="plant12"></div>
-    <div class="plant-holder"><img src="./images/plant13.png" alt="plant" class="plant" draggable="true" id="plant13"></div>
-    <div class="plant-holder"><img src="./images/plant14.png" alt="plant" class="plant" draggable="true" id="plant14"></div>
+    <!-- Imágenes del lado derecho -->
+    <img src="plant8.png" class="plant" draggable="true">
+    <img src="plant9.png" class="plant" draggable="true">
+    <img src="plant10.png" class="plant" draggable="true">
+    <img src="plant11.png" class="plant" draggable="true">
+    <img src="plant12.png" class="plant" draggable="true">
+    <img src="plant13.png" class="plant" draggable="true">
+    <img src="plant14.png" class="plant" draggable="true">
   </div>
 
   <script src="script.js"></script>
