@@ -1,27 +1,25 @@
-// script.js
-
+// Drag and drop functionality
 const plants = document.querySelectorAll('.plant');
-const terrarium = document.getElementById('terrarium');
+const terrarium = document.getElementById('terrarium-container');
 
-// Habilitar arrastre para las plantas
 plants.forEach(plant => {
-  plant.addEventListener('dragstart', event => {
-    event.dataTransfer.setData('id', event.target.id);
+  plant.addEventListener('dragstart', e => {
+    e.dataTransfer.setData('text/plain', e.target.src);
   });
 });
 
-// Permitir soltar plantas en el terrario
-terrarium.addEventListener('dragover', event => {
-  event.preventDefault();
+terrarium.addEventListener('dragover', e => {
+  e.preventDefault();
 });
 
-terrarium.addEventListener('drop', event => {
-  event.preventDefault();
-  const plantId = event.dataTransfer.getData('id');
-  const plant = document.getElementById(plantId);
-  const clone = plant.cloneNode(true); // Clona la planta arrastrada
-  clone.style.position = 'absolute';
-  clone.style.left = `${event.offsetX - 25}px`; // Ajusta posición
-  clone.style.top = `${event.offsetY - 25}px`;
-  terrarium.appendChild(clone);
+terrarium.addEventListener('drop', e => {
+  e.preventDefault();
+  const plantSrc = e.dataTransfer.getData('text/plain');
+  const img = document.createElement('img');
+  img.src = plantSrc;
+  img.style.position = 'absolute';
+  img.style.width = '80px';
+  img.style.left = `${e.offsetX - 40}px`;
+  img.style.top = `${e.offsetY - 40}px`;
+  terrarium.appendChild(img);
 });
